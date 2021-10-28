@@ -21,6 +21,6 @@ namespace DBFactura.Models
         [Column(TypeName = "date")]
         public DateTime FechaEntrega { get; set; }
 
-        //public List<RemitoItems> remitoItems { get; set; }
+        public List<RemitoItem> RemitoItems { get; set; }
     }
 }

@@ -23,13 +23,8 @@ namespace DBFactura.Models
         [MaxLength(50)]
         public string Descripcion { get; set; }
 
+        public List<FacturasItems> FacturasItems { get; set; }
 
-        //public int FacturaItemId { get; set; }
-        //[ForeignKey("FacturaItemId")]
-        //public FacturasItems FacturasItems { get; set;}
-
-        //[ForeignKey("RemitoItemsId")]
-        //public RemitoItems RemitoItems { get; set;}
-
+        public List<RemitoItem> RemitosItems { get; set; }
     }
 }
