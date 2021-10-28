@@ -10,13 +10,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace DBFactura.Models
 {
     public class FacturasItems
-    {   
-        [Key]
-        public int IdFacturaItem { get; set; }
+    {
+        [Key, Column(Order = 0)]
         public int ItemId { get; set; }
         [ForeignKey("ItemId")]
         public Items item { get; set; }
 
+
+        [Key, Column(Order = 1)]
         public int FacturaId { get; set; }
         [ForeignKey("FacturaId")]
 
